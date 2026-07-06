@@ -110,5 +110,4 @@ public class CheckBox extends UtilClass  {
 	}
 	
 	
-	
 }

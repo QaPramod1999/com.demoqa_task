@@ -39,7 +39,7 @@ public class Verify_Elements {
 	 {
 		 
 		 driver=BaseClass.firefoxDriver();
-		 driver.get("https://demoqa.com/");
+	  // driver.get("https://demoqa.com/");
 		 
 		 htmlReporter = BaseClass.gethtmlReporter();
 		 report = BaseClass.getExtentReports();
