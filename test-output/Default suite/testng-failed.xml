@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestData.Verify_RadioButton">
+      <class name="TestData.Verify_CheckBoxTest">
         <methods>
           <include name="f"/>
           <include name="beforeMethod"/>
-          <include name="afterMethod"/>
           <include name="afterClass"/>
+          <include name="afterMethod"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- TestData.Verify_RadioButton -->
+      </class> <!-- TestData.Verify_CheckBoxTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

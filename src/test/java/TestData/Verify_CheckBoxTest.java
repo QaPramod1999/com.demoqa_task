@@ -19,9 +19,11 @@ import org.testng.annotations.AfterClass;
 
 public class Verify_CheckBoxTest {
 	WebDriver driver ;
+	
 	CheckBox cb ;
 	Elements E1 ;
 	practice_form T1 ;
+	
 	ExtentHtmlReporter htmlReporter;
 	ExtentReports report;
 	ExtentTest test;
@@ -55,7 +57,8 @@ public class Verify_CheckBoxTest {
 	  cb.launchWebsiteValidation();
 	  T1.is_Forme1();
 	  E1.is_Element1();
-	  cb.CheckBox();
+	  
+	  cb.is_CheckBox();
 	  cb.is_Home1(); 
 	  cb.is_Desktop2();
 	  cb.is_Documents3();

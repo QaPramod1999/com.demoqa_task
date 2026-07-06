@@ -13,7 +13,7 @@ public class CheckBox extends UtilClass  {
 	
 	WebDriver driver ;
 
-	@FindBy( xpath ="(//li[@class='btn btn-light '])[2]") private WebElement CheckBox ;
+	@FindBy( xpath ="(//li[@class='btn btn-light '])[2]") private WebElement CheckBox1 ;
 	
 	@FindBy( xpath ="//span[@class='rc-tree-switcher rc-tree-switcher_close']") private WebElement open ;
 	@FindBy( xpath ="//span[@class='rc-tree-switcher rc-tree-switcher_open']") private WebElement Close  ;
@@ -47,9 +47,6 @@ public class CheckBox extends UtilClass  {
 			this.driver = driver;
 		}
 		
-	// Wait for the image element to be visible
-	JavascriptExecutor js = (JavascriptExecutor)driver ;
-	
 	
 	public void launchWebsiteValidation() {
 	    String actualUrl = driver.getCurrentUrl();
@@ -64,9 +61,12 @@ public class CheckBox extends UtilClass  {
 	}
 	
 		
-	public void CheckBox () throws InterruptedException{
+	public void is_CheckBox () throws InterruptedException{
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver ;
+
 		// Wait for the image element to be visible
-		WebElement element = expliciteWait(driver,CheckBox);
+		WebElement element = expliciteWait(driver,CheckBox1);
 		js.executeScript("arguments[0].scrollIntoView(true)",element);
 		expliciteWait(driver, element).click();
  
@@ -83,9 +83,9 @@ public class CheckBox extends UtilClass  {
 
 	public void is_Desktop2() throws InterruptedException
 	{
-		open.click();
-		Notes.click();
-		Commands.click();
+		expliciteWait(driver,open).click();
+		expliciteWait(driver,Notes).click();
+		expliciteWait(driver,Commands).click();
 		
 		
 	}
@@ -94,19 +94,20 @@ public class CheckBox extends UtilClass  {
 	public void is_Documents3() throws InterruptedException
 	{
 		
-		open.click();
-		WorkSpace.click();
-		Office.click();
+		expliciteWait(driver,open).click();
+		expliciteWait(driver,WorkSpace).click();
+		expliciteWait(driver,Office).click();
 		
 		
 	}
 	
 	public void is_Downloads4() {
 		
-		open.click();
-		Word_File_doc.click();
+		expliciteWait(driver,open).click();
+		expliciteWait(driver,Word_File_doc).click();
 		
-		Excel_File_doc.click();
+		expliciteWait(driver,Excel_File_doc).click();
+		
 	}
 	
 	
